@@ -1,0 +1,27 @@
+{
+  "name": "kanazawa-sushi",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/implexrr/kanazawa-sushi.git"
+  },
+  "author": "Chenhao Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/implexrr/kanazawa-sushi/issues"
+  },
+  "homepage": "https://github.com/implexrr/kanazawa-sushi#readme",
+  "devDependencies": {
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
