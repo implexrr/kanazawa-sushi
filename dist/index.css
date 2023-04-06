@@ -1,3 +1,9 @@
+* {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   height: 100%;
@@ -9,17 +15,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(71, 67, 109, 0.3);
+  box-shadow: inset 0 0 0 1000px rgba(59, 66, 93, 0.6);
+  overflow-y: visible;
 
-}
-* {
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
 }
 
 body {
-  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -34,17 +35,18 @@ body {
   width: 80%;
 }
 
-#spiel {
-  font-weight: 500;
+#content > * {
+  margin: 10px;
 }
 
 #navbar {
-  margin-top: 1%;
+  margin-top: 5%;
   margin-bottom: 1%;
   display: flex;
   justify-content: space-around;
   height: 1rem;
   width: 60%;
+  font-weight: 600;
 }
 
 #hero {
@@ -57,4 +59,13 @@ body {
   font-size: 40px;
   font-weight: 500;
   font-style: italic;
+}
+
+#spiel {
+  font-weight: 500;
+}
+
+#hours .title {
+  font-size: large;
+  font-weight: 500;
 }
