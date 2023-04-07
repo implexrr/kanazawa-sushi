@@ -1,3 +1,75 @@
 .hello {
   color: red;
 }
+
+* {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+html { 
+  background: url(../salmon-nigiri.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(59, 66, 93, 0.6);
+  overflow-y: visible;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  width: 80%;
+}
+
+#content > * {
+  margin: 10px;
+}
+
+#navbar {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-around;
+  height: 1rem;
+  width: 60%;
+  font-weight: 600;
+}
+
+#hero {
+  margin-top: 1%;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#slogan {
+  font-size: 40px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#spiel {
+  font-weight: 500;
+}
+
+#hours .title {
+  font-size: large;
+  font-weight: 500;
+}
