@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import generateNavBar from './generateNavBar.js';
 import './style.css';
 
