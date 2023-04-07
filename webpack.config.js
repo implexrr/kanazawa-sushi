@@ -1,6 +1,12 @@
 const path = require('path');
 
 module.exports = {
+  performance: {
+    assetFilter: function(assetFilename) {
+      return !assetFilename.endsWith('.jpg');
+    },
+  },
+
   entry: './src/index.js',
   devServer: {
     static: './dist',
@@ -15,6 +21,10 @@ module.exports = {
        test: /\.css$/i,
        use: ['style-loader', 'css-loader'],
      },
+     {
+      test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      type: 'asset/resource',
+    },
    ],
  },
 };

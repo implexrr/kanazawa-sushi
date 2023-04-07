@@ -2,12 +2,13 @@ import _ from 'lodash';
 import generateNavBar from './generateNavBar.js';
 import './style.css';
 
- function component() {
-  const navbar = generateNavBar();
-  return navbar;
- }
+  function component() {
+    const navbar = generateNavBar();
+    return navbar;
+  }
 
- document.querySelector('#content').appendChild(component());
+  document.querySelector('#content').appendChild(component());
+
 
 
 //  <body>
