@@ -1,12 +1,21 @@
 import generateNavBar from './generateNavBar.js';
+import generateHero from './generateHero.js';
 import './style.css';
 
-  function component() {
-    const navbar = generateNavBar();
-    return navbar;
+  function generateContent() {
+    const content = [];
+
+    content.push(generateNavBar());
+    content.push(generateHero());
+
+
+    return content;
   }
 
-  document.querySelector('#content').appendChild(component());
+  const content = generateContent();
+  for (let i = 0; i < content.length; i++) {
+    document.querySelector('#content').appendChild(content[i]);
+  }
 
 
 
