@@ -8,7 +8,6 @@ import './style.css';
     content.push(generateNavBar());
     content.push(generateHero());
 
-
     return content;
   }
 

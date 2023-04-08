@@ -1,7 +1,9 @@
 export default function generateHero() {
+  // Create empty hero div
   const hero = document.createElement('div');
   hero.setAttribute('id', 'hero');
   
+  // Create and append slogan, greeting to hero element
   const greeting = document.createElement('div');
   greeting.setAttribute('id', 'greeting');
   greeting.textContent = "Kanazawa Sushi";
