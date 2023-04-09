@@ -1,8 +1,7 @@
 import './style.css';
 import generateHomePage from './generateHomePage.js';
 
-function generateContent(e) {
-
+function generateContent() {
   const content = generateHomePage();
   return content;
 }
@@ -11,7 +10,6 @@ const content = generateContent();
 for (let i = 0; i < content.length; i++) {
   document.querySelector('#content').appendChild(content[i]);
 }
-
 
 
 
