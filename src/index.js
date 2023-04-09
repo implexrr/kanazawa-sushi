@@ -1,26 +1,17 @@
-import generateNavBar from './generateNavBar.js';
-import generateHero from './generateHero.js';
-import generateSpiel from './generateSpiel.js';
-import generateHoursOfOperation from './generateHoursOfOperation.js';
-import generateLocation from './generateLocation.js';
 import './style.css';
+import generateHomePage from './generateHomePage.js';
 
-  function generateContent() {
-    const content = [];
+function generateContent(e) {
 
-    content.push(generateNavBar());
-    content.push(generateHero());
-    content.push(generateSpiel());
-    content.push(generateHoursOfOperation());
-    content.push(generateLocation());
+  const content = generateHomePage();
+  return content;
+}
 
-    return content;
-  }
+const content = generateContent();
+for (let i = 0; i < content.length; i++) {
+  document.querySelector('#content').appendChild(content[i]);
+}
 
-  const content = generateContent();
-  for (let i = 0; i < content.length; i++) {
-    document.querySelector('#content').appendChild(content[i]);
-  }
 
 
 

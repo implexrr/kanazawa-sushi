@@ -1,4 +1,5 @@
 export default function generateHoursDays () {
+  // Create divs for days of operation
   const sunday = document.createElement('div');
   sunday.setAttribute('class', 'days');
   sunday.textContent = "Sunday: 11am - 6pm";
@@ -11,6 +12,7 @@ export default function generateHoursDays () {
   friSat.setAttribute('class', 'days');
   friSat.textContent = "Friday-Saturday: 11am - 12am";
 
+  // Store days/hours of operation in an array
   const days = [sunday, monThu, friSat];
   return days;
 }
