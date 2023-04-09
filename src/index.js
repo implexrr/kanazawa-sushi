@@ -1,5 +1,6 @@
 import generateNavBar from './generateNavBar.js';
 import generateHero from './generateHero.js';
+import generateSpiel from './generateSpiel.js'
 import './style.css';
 
   function generateContent() {
@@ -7,6 +8,7 @@ import './style.css';
 
     content.push(generateNavBar());
     content.push(generateHero());
+    content.push(generateSpiel());
 
     return content;
   }
