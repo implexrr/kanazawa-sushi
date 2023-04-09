@@ -1,6 +1,7 @@
 import generateNavBar from './generateNavBar.js';
 import generateHero from './generateHero.js';
-import generateSpiel from './generateSpiel.js'
+import generateSpiel from './generateSpiel.js';
+import generateHoursOfOperation from './generateHoursOfOperation.js';
 import './style.css';
 
   function generateContent() {
@@ -9,6 +10,7 @@ import './style.css';
     content.push(generateNavBar());
     content.push(generateHero());
     content.push(generateSpiel());
+    content.push(generateHoursOfOperation());
 
     return content;
   }
