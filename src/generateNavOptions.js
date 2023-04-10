@@ -1,4 +1,4 @@
-import clearContent from "./clearContent.js";
+import generateContent from "./generateContent.js";
 export default function generateNavOptions() {
 
   // Create nav options
@@ -18,7 +18,7 @@ export default function generateNavOptions() {
   const navOptions = [home, menu, contact];
   for (let i = 0; i < navOptions.length; i++) {
     navOptions[i].setAttribute('class', 'nav-option');
-    navOptions[i].addEventListener('click', clearContent);
+    navOptions[i].addEventListener('click', generateContent);
   }
   return navOptions
 }
