@@ -9,7 +9,6 @@ export default function generateNavBar() {
   // Goes through the nav options and adds each one to the navbar
   for (let i = 0; i < navOptions.length; i++) {
     navbar.appendChild(navOptions[i]);
-    console.log(navOptions[i].textContent);
   }
   return navbar;
 }

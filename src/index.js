@@ -1,16 +1,13 @@
 import './style.css';
 import generateHomePage from './generateHomePage.js';
 
-function generateContent() {
-  const content = generateHomePage();
-  return content;
-}
+// Create homepage
+generateHomePage();
 
-const content = generateContent();
-for (let i = 0; i < content.length; i++) {
-  document.querySelector('#content').appendChild(content[i]);
-}
-
+// const navOptions = document.querySelectorAll('.nav-option');
+// for (let i = 0; i < navOptions.length; i++) {
+//   navOptions[i].addEventListener('click', generateNewContent);
+// }
 
 
 //  <body>

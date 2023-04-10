@@ -13,5 +13,9 @@ export default function generateHomePage() {
   homepage.push(generateHoursOfOperation());
   homepage.push(generateLocation());
 
-  return homepage;
+  for (let i = 0; i < homepage.length; i++) {
+    document.querySelector('#content').appendChild(homepage[i]);
+  }
+  
+  console.log("Homepage generated.");
 }
