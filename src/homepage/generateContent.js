@@ -1,4 +1,4 @@
-import generateHomePage from "./generateHomePage";
+import generateHomePage from "./generateHomePage.js";
 
 export default function generateContent(e) {
   const option = e.target.id;

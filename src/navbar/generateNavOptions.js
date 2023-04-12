@@ -1,4 +1,4 @@
-import generateContent from "./generateContent.js";
+import generateContent from "../homepage/generateContent.js";
 export default function generateNavOptions() {
 
   // Create nav options

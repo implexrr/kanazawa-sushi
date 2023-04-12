@@ -1,5 +1,5 @@
 import './style.css';
-import generateHomePage from './generateHomePage.js';
+import generateHomePage from './homepage/generateHomePage.js';
 
 // Create homepage
 generateHomePage();

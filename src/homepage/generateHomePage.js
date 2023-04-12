@@ -1,8 +1,8 @@
-import generateNavBar from './generateNavBar.js';
+import generateNavBar from '../navbar/generateNavBar.js';
 import generateHero from './generateHero.js';
 import generateSpiel from './generateSpiel.js';
 import generateHoursOfOperation from './generateHoursOfOperation.js';
-import generateLocation from './generateLocation.js';
+import generateLocation from '../utils/generateLocation.js';
 
 export default function generateHomePage() {
   const homepage = [];
