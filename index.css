@@ -7,6 +7,9 @@
 html, body {
   margin: 0;
   height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 html {
@@ -15,7 +18,6 @@ html {
   -o-background-size: cover;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(4, 90, 110);
-  overflow-y: visible;
 }
 
 body {
@@ -55,6 +57,7 @@ body {
   transition: 0.3s;
   cursor: pointer;
   text-decoration: underline;
+  box-shadow: inset 0 0 0 1000px rgba(4, 90, 110);
 }
 
 #menu-title {
@@ -70,9 +73,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1%;
   padding: 1%;
-  overflow-y: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
 *::-webkit-scrollbar {
@@ -80,7 +80,7 @@ body {
 }
 
 .menu-option {
-  min-height: 5%;
+  min-height: 20rem;
 }
 
 #salmon-nigiri {
@@ -141,10 +141,6 @@ body {
 #salmon-hand-roll {
   background: url(../src/assets/images/menu-items/hand-roll/salmon-hand-roll.png) no-repeat center center;
   background-size: contain;
-}
-
-#location {
-  margin-top: 3%;
 }
 
 #content {
