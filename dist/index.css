@@ -33,7 +33,6 @@ body {
   text-align: center;
   height: 100%;
   width: 80%;
-  border: solid green;
 }
 
 #navbar {
@@ -58,10 +57,15 @@ body {
   text-decoration: underline;
 }
 
+#menu-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 #menu-options {
   height: 100%;
   width: 100%;
-  border: solid red;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1%;
@@ -76,8 +80,7 @@ body {
 }
 
 .menu-option {
-  border: solid black;
-  min-height: 140px;
+  min-height: 5%;
 }
 
 #salmon-nigiri {
@@ -103,4 +106,48 @@ body {
 #crab-nigiri {
   background: url(../src/assets/images/menu-items/nigiri/crab-nigiri.png) no-repeat center center;
   background-size: contain;
+}
+
+#cucumber-maki {
+  background: url(../src/assets/images/menu-items/maki/cucumber-maki.png) no-repeat center center;
+  background-size: contain;
+}
+
+#salmon-roe-maki {
+  background: url(../src/assets/images/menu-items/maki/salmon-roe-maki.png) no-repeat center center;
+  background-size: contain;
+}
+
+#salmon-avocado-maki {
+  background: url(../src/assets/images/menu-items/maki/salmon-avocado-maki.png) no-repeat center center;
+  background-size: contain;
+}
+
+#double-salmon {
+  background: url(../src/assets/images/menu-items/maki/double-salmon.png) no-repeat center center;
+  background-size: contain;
+}
+
+#salmon-dreams {
+  background: url(../src/assets/images/menu-items/maki/salmon-dreams.png) no-repeat center center;
+  background-size: contain;
+}
+
+#crab-hand-roll {
+  background: url(../src/assets/images/menu-items/hand-roll/crab-hand-roll.png) no-repeat center center;
+  background-size: contain;
+}
+
+#salmon-hand-roll {
+  background: url(../src/assets/images/menu-items/hand-roll/salmon-hand-roll.png) no-repeat center center;
+  background-size: contain;
+}
+
+#location {
+  margin-top: 3%;
+}
+
+#content {
+  padding-bottom: 1%;
+  box-shadow: inset 0 0 0 1000px rgba(4, 90, 110);
 }
