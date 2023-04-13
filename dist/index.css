@@ -81,6 +81,26 @@ body {
 }
 
 #salmon-nigiri {
-  background: url(../src/assets/salmon-nigiri.png) no-repeat center;
+  background: url(../src/assets/salmon-nigiri.png) no-repeat center center;
+  background-size: contain;
+}
+
+#tuna-nigiri {
+  background: url(../src/assets/tuna-nigiri.png) no-repeat center center;
+  background-size: contain;
+}
+
+#shrimp-nigiri {
+  background: url(../src/assets/shrimp-nigiri.png) no-repeat center center;
+  background-size: contain;
+}
+
+#egg-nigiri {
+  background: url(../src/assets/egg-nigiri.png) no-repeat center center;
+  background-size: contain;
+}
+
+#crab-nigiri {
+  background: url(../src/assets/crab-nigiri.png) no-repeat center center;
   background-size: contain;
 }
