@@ -84,7 +84,7 @@ body {
 }
 
 #salmon-nigiri {
-  background: url(../src/assets/images/menu-items/nigiri/salmon-nigiri.png) no-repeat center center;
+  background: url(../src/assets/images/menu-items/nigiri/testsushi-fotor-bg-remover-20230413185655.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -145,5 +145,6 @@ body {
 
 #content {
   padding-bottom: 1%;
-  box-shadow: inset 0 0 0 1000px rgba(4, 90, 110);
+  /* box-shadow: inset 0 0 0 1000px rgba(4, 90, 110); */
+  box-shadow: inset 0 0 0 1000px rgb(81, 131, 142);
 }
