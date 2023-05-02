@@ -1,31 +1,7 @@
 @import url(header.css);
 @import url(footer.css);
-
-* {
-  color: rgb(255, 255, 255);
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
-html {
-  background: url(/src/assets/images/homepage-background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /* overflow-y: visible; */
-}
-
-#content {
-  height: 100%;
-  display: grid;
-  grid-template-rows: max(7.5%, 2rem) 1fr max(5%, 1rem);
-}
+@import url(meta.css);
+@import url(margins.css);
 
 /* ------- */
 #main-content {
