@@ -52,6 +52,12 @@
   height: 20rem;
   padding: 1rem;
   box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  filter: brightness(120%);
+  transition: 0.3s;
 }
 
 .menu-item .item-icon {
