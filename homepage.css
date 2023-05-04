@@ -3,13 +3,25 @@
 @import url(meta.css);
 @import url(margins.css);
 
-@keyframes fadeInAnimation {
+@keyframes fadeInSlogan {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
+    opacity: 1;
    }
+}
+
+@keyframes fadeInSpiel {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+   }
+  100% {
+    opacity: 1;
+ }
 }
 
 #home {
@@ -58,19 +70,18 @@
 #hero {
   font-size: 3rem;
   font-weight: 700;
-  animation: fadeInAnimation ease 1s;
 }
 
 #slogan {
   font-size: 2rem;
   font-weight: 500;
   font-style: italic;
-  animation: fadeInAnimation ease 3s;
+  animation: fadeInSlogan ease 3s;
 }
 
 #spiel {
   font-weight: 500;
-  animation: fadeInAnimation ease 5s;
+  animation: fadeInSpiel ease 3s;
 }
 
 #hours .title {
