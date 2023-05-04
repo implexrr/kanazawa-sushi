@@ -3,6 +3,15 @@
 @import url(meta.css);
 @import url(margins.css);
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 #home {
   transition: 0.3s;
   transform: translate(0, -0.1rem);
@@ -49,16 +58,19 @@
 #hero {
   font-size: 3rem;
   font-weight: 700;
+  animation: fadeInAnimation ease 1s;
 }
 
 #slogan {
   font-size: 2rem;
   font-weight: 500;
   font-style: italic;
+  animation: fadeInAnimation ease 3s;
 }
 
 #spiel {
   font-weight: 500;
+  animation: fadeInAnimation ease 5s;
 }
 
 #hours .title {
