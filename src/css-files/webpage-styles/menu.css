@@ -1,0 +1,165 @@
+@import url(../common/header.css);
+@import url(../common/footer.css);
+@import url(../common/meta.css);
+@import url(../common/margins.css);
+
+#menu {
+  transition: 0.3s;
+  transform: translate(0, -0.1rem);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
+/* ------- */
+#main-content {
+  box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 5%;
+  padding-top: 2%;
+}
+
+#main-content::-webkit-scrollbar {
+  display: none;
+}
+
+#menu-showcase {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min(150px, 10%), 1fr;
+}
+
+
+#menu-showcase .title {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-rows: 5fr repeat(4, 1fr);
+  gap: 1%;
+  height: 20rem;
+  padding: 1rem;
+  box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  filter: brightness(120%);
+  transition: 0.3s;
+}
+
+.menu-item .item-icon {
+  box-shadow: inset 0 0 0 1000px rgba(29, 26, 127, 0.082);
+}
+
+/* ------- */
+
+
+/* ------- */
+#salmon-nigiri .item-icon {
+  background: url(/src/assets/images/menu-items/nigiri/salmon-nigiri.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#tuna-nigiri .item-icon {
+  background: url(/src/assets/images/menu-items/nigiri/tuna-nigiri.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#shrimp-nigiri .item-icon {
+  background: url(/src/assets/images/menu-items/nigiri/shrimp-nigiri.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#egg-nigiri .item-icon {
+  background: url(/src/assets/images/menu-items/nigiri/egg-nigiri.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#crab-nigiri .item-icon {
+  background: url(/src/assets/images/menu-items/nigiri/crab-nigiri.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#salmon-avocado-maki .item-icon {
+  background: url(/src/assets/images/menu-items/maki/salmon-avocado-maki.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#salmon-roe-maki .item-icon {
+  background: url(/src/assets/images/menu-items/maki/salmon-roe-maki.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#cucumber-maki .item-icon {
+  background: url(/src/assets/images/menu-items/maki/cucumber-maki.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#crab-hand-roll .item-icon {
+  background: url(/src/assets/images/menu-items/hand-roll/crab-hand-roll.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#salmon-hand-roll .item-icon {
+  background: url(/src/assets/images/menu-items/hand-roll/salmon-hand-roll.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#double-salmon .item-icon {
+  background: url(/src/assets/images/menu-items/misc/double-salmon.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+#salmon-dreams .item-icon {
+  background: url(/src/assets/images/menu-items/misc/salmon-dreams.png) no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
