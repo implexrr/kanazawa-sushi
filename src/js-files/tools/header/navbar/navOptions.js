@@ -1,5 +1,5 @@
-import generateContent from "../../../homepage/generateContent.js";
-export default function generateNavOptions() {
+import generateContent from '../../../../js-files/generateContent.js';
+export default function navOptions() {
 
   // Create nav options
   const home = document.createElement('div');
@@ -15,10 +15,10 @@ export default function generateNavOptions() {
   contact.setAttribute('id', 'contact');
 
   // Add nav options to array, return said array
-  const navOptions = [home, menu, contact];
-  for (let i = 0; i < navOptions.length; i++) {
-    navOptions[i].setAttribute('class', 'nav-option');
-    navOptions[i].addEventListener('click', generateContent);
+  const navOptionsArr = [home, menu, contact];
+  for (let i = 0; i < navOptionsArr.length; i++) {
+    navOptionsArr[i].setAttribute('class', 'nav-option');
+    navOptionsArr[i].addEventListener('click', generateContent);
   }
-  return navOptions
+  return navOptionsArr;
 }

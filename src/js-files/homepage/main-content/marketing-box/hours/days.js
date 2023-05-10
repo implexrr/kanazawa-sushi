@@ -1,4 +1,4 @@
-export default function generateDays() {
+export default function days() {
 
   const sun = document.createElement('div');
   const monThu = document.createElement('div');
