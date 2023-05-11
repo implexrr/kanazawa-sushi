@@ -3,7 +3,7 @@
 @import url(../common/meta.css);
 @import url(../common/margins.css);
 
-#main-content {
+#contactPage-main-content {
   display: grid;
   grid-template-rows: 50% 30px 40% 1fr;
   justify-content: center;
@@ -16,11 +16,11 @@
   padding-top: 2%;
 }
 
-#main-content::-webkit-scrollbar {
+#contactPage-main-content::-webkit-scrollbar {
   display: none;
 }
 
-#main-content > * {
+#contactPage-main-content > * {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -29,7 +29,7 @@
   font-weight: 500;
 }
 
-#map-pic {
+#contactPage-map-pic {
   height: 100%;
   margin-bottom: 5%;
   margin-top: 5%;
@@ -40,7 +40,7 @@
   background-size: contain;
 }
 
-#map-description {
+#contactPage-map-description {
   align-items: center;
   text-align: center;
 }
