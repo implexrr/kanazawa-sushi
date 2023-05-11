@@ -1,5 +1,6 @@
 import generateHomePage from './homepage/generateHomePage.js';
 import generateContactPage from './contact/generateContactPage.js';
+import generateMenuPage from './menu/generateMenuPage.js';
 
 export default function generateContent(e) {
   const option = e.target.id;
@@ -11,5 +12,8 @@ export default function generateContent(e) {
   }
   else if (option == "contact") {
     generateContactPage();
+  }
+  else if (option == "menu") {
+    generateMenuPage();
   }
 }
