@@ -1,5 +1,6 @@
 import '../../css-files/webpage-styles/contact.css';
 import header from '../tools/header/header.js';
+import underlineNavContact from '../tools/header/navbar/underlineNavContact';
 
 export default function generateContactPage() {
   const contactPage = [];
@@ -9,14 +10,6 @@ export default function generateContactPage() {
   for (let i = 0; i < contactPage.length; i++) {
     document.querySelector('#content').appendChild(contactPage[i]);
   }
-
-  const navHome = document.querySelector('#home');
-  navHome.style.textDecoration = "none";
-  navHome.style.transform = "translate(0, 0.1rem)";
-
-  const navMenu = document.querySelector('#menu');
-  navMenu.style.textDecoration = "none";
-  navMenu.style.transform = "translate(0, 0.1rem)";
-  
+  underlineNavContact();
   console.log("Contact page generated.");
 }
