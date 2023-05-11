@@ -24,25 +24,6 @@
  }
 }
 
-#menu {
-  transform: translate(0, 0.1rem);
-  text-decoration: none;
-  text-underline-offset: 0rem;
-}
-
-#contact {
-  transform: translate(0, 0.1rem);
-  text-decoration: none;
-  text-underline-offset: 0rem;
-}
-
-#home {
-  transition: 0.3s;
-  transform: translate(0, -0.1rem);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-}
-
 #homepage-main-content {
   display: flex;
   justify-content: center;

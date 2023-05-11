@@ -1,7 +1,8 @@
 import '../../css-files/webpage-styles/homepage.css'
 import header from '../tools/header/header.js';
 import mainContent from './main-content/mainContent.js';
-import footer from '../tools/footer/footer.js'
+import footer from '../tools/footer/footer.js';
+import underlineNavHome from './underlineNavHome';
 
 export default function generateHomePage() {
   const homepage = [];
@@ -14,13 +15,12 @@ export default function generateHomePage() {
     document.querySelector('#content').appendChild(homepage[i]);
   }
 
-  const navContact = document.querySelector('#contact');
-  navContact.style.textDecoration = "none";
-  navContact.style.transform = "translate(0, 0.1rem)";
+  // const navHome = document.querySelector('#home');
+  // navHome.style.textDecoration = "underline";
+  // navHome.style.transform = "translate(0, -0.1rem)";
+  // navHome.style.textUnderlineOffset = "1rem";
 
-  const navMenu = document.querySelector('#menu');
-  navMenu.style.textDecoration = "none";
-  navMenu.style.transform = "translate(0, 0.1rem)";
+  underlineNavHome();
   
   console.log("Homepage generated.");
 }

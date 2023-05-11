@@ -3,25 +3,6 @@
 @import url(../common/meta.css);
 @import url(../common/margins.css);
 
-/* #home {
-  transform: translate(0, 0.1rem);
-  text-decoration: none;
-  text-underline-offset: 0rem;
-}
-
-#menu {
-  transform: translate(0, 0.1rem);
-  text-decoration: none;
-  text-underline-offset: 0rem;
-} */
-
-#contact {
-  transition: 0.3s;
-  transform: translate(0, -0.1rem);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-}
-
 #main-content {
   display: grid;
   grid-template-rows: 50% 30px 40% 1fr;
