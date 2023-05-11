@@ -24,6 +24,18 @@
  }
 }
 
+#menu {
+  transform: translate(0, 0.1rem);
+  text-decoration: none;
+  text-underline-offset: 0rem;
+}
+
+#contact {
+  transform: translate(0, 0.1rem);
+  text-decoration: none;
+  text-underline-offset: 0rem;
+}
+
 #home {
   transition: 0.3s;
   transform: translate(0, -0.1rem);
@@ -31,7 +43,7 @@
   text-underline-offset: 1rem;
 }
 
-#main-content {
+#homepage-main-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +52,7 @@
   scrollbar-width: none;
 }
 
-#marketing-box {
+#homepage-marketing-box {
   height: 100%;
   width: 100%;
   overflow: scroll;
@@ -54,37 +66,37 @@
   box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
 }
 
-#main-content::-webkit-scrollbar {
+#homepage-main-content::-webkit-scrollbar {
   display: none;
 }
 
-#marketing-box::-webkit-scrollbar {
+#homepage-marketing-box::-webkit-scrollbar {
   display: none;
 }
 
-#marketing-box > * {
+#homepage-marketing-box > * {
   width: 100%;
   text-align: center;
 }
 
-#hero {
+#homepage-hero {
   font-size: 3rem;
   font-weight: 700;
 }
 
-#slogan {
+#homepage-slogan {
   font-size: 2rem;
   font-weight: 500;
   font-style: italic;
   animation: fadeInSlogan ease 3s;
 }
 
-#spiel {
+#homepage-spiel {
   font-weight: 500;
   animation: fadeInSpiel ease 3s;
 }
 
-#hours .title {
+#homepage-hours .title {
   font-size: large;
   font-weight: 500;
 }

@@ -3,6 +3,18 @@
 @import url(../common/meta.css);
 @import url(../common/margins.css);
 
+/* #home {
+  transform: translate(0, 0.1rem);
+  text-decoration: none;
+  text-underline-offset: 0rem;
+}
+
+#contact {
+  transform: translate(0, 0.1rem);
+  text-decoration: none;
+  text-underline-offset: 0rem;
+} */
+
 #menu {
   transition: 0.3s;
   transform: translate(0, -0.1rem);

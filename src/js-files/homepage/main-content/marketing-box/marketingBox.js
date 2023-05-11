@@ -6,7 +6,7 @@ import hours from '../marketing-box/hours/hours.js';
 export default function marketingBox(e) {
   const marketingBox = [hero(), slogan(), spiel(), hours()]
   const marketingBoxDom = document.createElement('div');
-  marketingBoxDom.setAttribute('id', 'marketing-box');
+  marketingBoxDom.setAttribute('id', 'homepage-marketing-box');
   for (let i = 0; i < marketingBox.length; i++) {
     marketingBoxDom.append(marketingBox[i]);
   }

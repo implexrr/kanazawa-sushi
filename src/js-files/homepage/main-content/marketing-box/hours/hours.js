@@ -4,7 +4,7 @@ import days from './days.js';
 
 export default function hours() {
   const hours = document.createElement('div');
-  hours.setAttribute('id', 'hours');
+  hours.setAttribute('id', 'homepage-hours');
   hours.appendChild(title());
 
   const daysArr = days();
