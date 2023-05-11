@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   performance: {
     assetFilter: function(assetFilename) {
       return !assetFilename.endsWith('.jpg');
@@ -8,6 +9,7 @@ module.exports = {
   },
 
   entry: './src/index.js',
+  devtool: 'inline-source-map',
   devServer: {
     static: './dist',
   },

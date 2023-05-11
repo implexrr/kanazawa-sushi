@@ -8,8 +8,8 @@ export default function hours() {
   hours.appendChild(title());
 
   const daysArr = days();
-  for (let i = 0; i < days.length; i++) {
-    hours.appendChild(days[i]);
+  for (let i = 0; i < daysArr.length; i++) {
+    hours.appendChild(daysArr[i]);
   }
 
   return hours;
