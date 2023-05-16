@@ -1,3 +1,4 @@
+// Generate div containing the details for the hours of the restaurant
 export default function days() {
   const sun = document.createElement('div');
   const monThu = document.createElement('div');

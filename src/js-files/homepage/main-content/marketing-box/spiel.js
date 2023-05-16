@@ -1,3 +1,4 @@
+// Generate div containing the marketing box spiel
 export default function spiel() {
   const spiel = document.createElement('div');
   spiel.textContent = "Kanazawa Sushi is a culinary gem that will take your taste buds on an unforgettable journey. "

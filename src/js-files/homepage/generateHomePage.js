@@ -4,6 +4,7 @@ import mainContent from './main-content/mainContent.js';
 import footer from '../tools/footer/footer.js';
 import underlineNavHome from '../tools/header/navbar/underlineNavHome';
 
+// Generate home page content
 export default function generateHomePage() {
   const homepage = [header(), mainContent(), footer()];
 
