@@ -5,15 +5,15 @@ import footer from '../tools/footer/footer.js';
 import underlineNavMenu from '../tools/header/navbar/underlineNavMenu';
 
 export default function generateMenuPage() {
-  const menuPage = [];
+  const menuPage = [header(), mainContent(), footer()];
 
-  menuPage.push(header());
-  menuPage.push(mainContent());
-  menuPage.push(footer());
-
+  // Push all 3 contact page components to content
   for (let i = 0; i < menuPage.length; i++) {
     document.querySelector('#content').appendChild(menuPage[i]);
   }
+
+  // Underline Menu for the navigation bar
   underlineNavMenu();
+
   console.log("Menu page generated.");
 }

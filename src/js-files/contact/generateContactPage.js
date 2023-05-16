@@ -5,16 +5,15 @@ import footer from '../tools/footer/footer';
 import underlineNavContact from '../tools/header/navbar/underlineNavContact';
 
 export default function generateContactPage() {
-  const contactPage = [];
+  const contactPage = [header(), mainContent(), footer()];
 
-  contactPage.push(header());
-  contactPage.push(mainContent());
-  contactPage.push(footer());
-
-
+  // Push all 3 contact page components to content
   for (let i = 0; i < contactPage.length; i++) {
     document.querySelector('#content').appendChild(contactPage[i]);
   }
+
+  // Underline Contact for the navigation bar
   underlineNavContact();
+
   console.log("Contact page generated.");
 }
