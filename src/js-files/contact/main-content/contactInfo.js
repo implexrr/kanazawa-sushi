@@ -1,4 +1,4 @@
-// Create div containing restaurants contact information
+// Generate div containing the contact information of the restaurant
 export default function contactInfo() {
   const contactInfo = document.createElement('div');
   contactInfo.textContent = "Contact us at: 012-345-6789";
