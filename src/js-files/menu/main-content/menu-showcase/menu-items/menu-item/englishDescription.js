@@ -1,3 +1,4 @@
+// Generate div containing the english description for a given menu item
 export default function englishDescription(name) {
 
   const englishDescription = document.createElement('div');

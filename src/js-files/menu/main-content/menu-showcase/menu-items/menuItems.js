@@ -1,6 +1,9 @@
 import generateMenuItem from './menu-item/generateMenuItem.js';
+
+// Create menu items to display onto the showcase
 export default function menuItems() {
-  const menuItems = []
+
+  // Generate divs for all menu items
   const salmonNigiri = generateMenuItem("salmon-nigiri", "Salmon Nigiri", "サーモン", "2pc", "6.99");
   const tunaNigiri = generateMenuItem("tuna-nigiri", "Tuna Nigiri", "まぐろ", "2pc", "6.99");
   const shrimpNigiri = generateMenuItem("shrimp-nigiri", "Shrimp Nigiri", "エビ", "2pc", "6.99");
@@ -14,19 +17,9 @@ export default function menuItems() {
   const doubleSalmon = generateMenuItem("double-salmon", "Double Salmon", "ダブルサーモン", "6pc", "11.99");
   const salmonDreams = generateMenuItem("salmon-dreams", "Salmon Nigiri", "サーモンの夢", "6pc", "11.99");
 
-  menuItems.push(salmonNigiri);
-  menuItems.push(tunaNigiri);
-  menuItems.push(shrimpNigiri);
-  menuItems.push(eggNigiri);
-  menuItems.push(crabNigiri);
-  menuItems.push(salmonAvocadoMaki);
-  menuItems.push(salmonRoeMaki);
-  menuItems.push(cucumberMaki);
-  menuItems.push(crabHandRoll);
-  menuItems.push(salmonHandRoll);
-  menuItems.push(doubleSalmon);
-  menuItems.push(salmonDreams);
+  const menuItems = [salmonNigiri, tunaNigiri, shrimpNigiri, eggNigiri, crabNigiri, salmonAvocadoMaki, salmonRoeMaki, cucumberMaki, crabHandRoll, salmonHandRoll, doubleSalmon, salmonDreams]
 
+  // Push all menu item divs onto a the menu items div
   const menuItemsDOM = document.createElement('div');
   menuItemsDOM.setAttribute('id', 'menu-items');
   for (let i = 0; i < menuItems.length; i++) {

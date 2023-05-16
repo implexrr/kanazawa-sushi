@@ -1,3 +1,4 @@
+// Generate div containing the amount description for a given menu item
 export default function amountDescription(amount) {
 
   const amountDescription = document.createElement('div');

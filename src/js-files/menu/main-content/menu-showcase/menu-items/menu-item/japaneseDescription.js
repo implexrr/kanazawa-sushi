@@ -1,3 +1,4 @@
+// Generate div containing the japanese description for a given menu item
 export default function japaneseDescription(name) {
 
   const japaneseDescription = document.createElement('div');
