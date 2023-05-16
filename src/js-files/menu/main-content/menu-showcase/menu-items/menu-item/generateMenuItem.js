@@ -1,32 +1,18 @@
-export default function generateMenuItem(itemId, englishName, japaneseName, _amount, _price) {
-  const menuItem = document.createElement('div');
-  menuItem.setAttribute('class', 'menu-item');
-  menuItem.setAttribute('id', itemId);
+import itemIcon from './itemIcon.js';
+import englishDescription from './englishDescription.js';
+import japaneseDescription from './japaneseDescription.js';
+import amountDescription from './amountDescription.js';
+import priceDescription from './priceDescription.js';
 
-  const itemIcon = document.createElement('div');
-  itemIcon.setAttribute('class', 'item-icon');
-  menuItem.appendChild(itemIcon);
-  
-  const descriptionEnglish = document.createElement('div');
-  descriptionEnglish.setAttribute('class', 'description-english');
-  descriptionEnglish.textContent = englishName;
-  menuItem.appendChild(descriptionEnglish);
+export default function generateMenuItem(itemId, englishName, japaneseName, amount, price) {
+  const menuItemDOM = document.createElement('div');
+  menuItemDOM.setAttribute('class', 'menu-item');
+  menuItemDOM.setAttribute('id', itemId);
 
-  const descriptionJapanese = document.createElement('div');
-  descriptionJapanese.setAttribute('class', 'description-japanese');
-  descriptionJapanese.textContent = japaneseName;
-  menuItem.appendChild(descriptionJapanese);
+  const menuItem = [itemIcon(), englishDescription(englishName), japaneseDescription(japaneseName), amountDescription(amount), priceDescription(price)];
+  for (let i = 0; i < menuItem.length; i++) {
+    menuItemDOM.appendChild(menuItem[i]);
+  }
 
-  const amount = document.createElement('div');
-  amount.setAttribute('class', 'amount');
-  amount.textContent = _amount;
-  menuItem.appendChild(amount);
-
-  const price = document.createElement('div');
-  price.setAttribute('class', 'price');
-  price.textContent = _price;
-  menuItem.appendChild(price);
-  
-
-  return menuItem;
+  return menuItemDOM;
 }
