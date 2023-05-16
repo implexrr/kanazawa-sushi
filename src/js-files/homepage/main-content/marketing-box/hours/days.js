@@ -1,5 +1,4 @@
 export default function days() {
-
   const sun = document.createElement('div');
   const monThu = document.createElement('div');
   const friSat = document.createElement('div');

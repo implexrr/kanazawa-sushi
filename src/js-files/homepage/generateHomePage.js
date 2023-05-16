@@ -5,16 +5,14 @@ import footer from '../tools/footer/footer.js';
 import underlineNavHome from '../tools/header/navbar/underlineNavHome';
 
 export default function generateHomePage() {
-  const homepage = [];
+  const homepage = [header(), mainContent(), footer()];
 
-  homepage.push(header());
-  homepage.push(mainContent());
-  homepage.push(footer());
-
+  // Push all 3 homepage components to content
   for (let i = 0; i < homepage.length; i++) {
     document.querySelector('#content').appendChild(homepage[i]);
   }
 
+  // Underline Home for the navigation bar
   underlineNavHome();
   
   console.log("Homepage generated.");
