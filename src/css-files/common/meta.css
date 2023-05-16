@@ -8,5 +8,5 @@
 #content {
   height: 100%;
   display: grid;
-  grid-template-rows: max(7.5%, 2rem) 1fr max(5%, 1rem);
+  grid-template-rows: max(7.5%, 3rem) 1fr max(5%, 2rem);
 }

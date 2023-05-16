@@ -4,8 +4,9 @@
 @import url(../common/margins.css);
 
 #contactPage-main-content {
+  height: 100%;
   display: grid;
-  grid-template-rows: 50% 30px 40% 1fr;
+  grid-template-rows: 50% 5% 40% 5%;
   justify-content: center;
   align-items: center;
   overflow: scroll;
@@ -25,7 +26,6 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  font-size: auto;
   font-weight: 500;
 }
 
@@ -42,5 +42,11 @@
 
 #contactPage-map-description {
   align-items: center;
-  text-align: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#contactPage-map-description::-webkit-scrollbar {
+  display: none;
 }
