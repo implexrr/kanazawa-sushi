@@ -10,7 +10,7 @@
   text-underline-offset: 1rem;
 }
 
-#main-content {
+#contact-main-content {
   height: 100%;
   padding: 10%;
   overflow: scroll;
@@ -21,7 +21,7 @@
   box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
 }
 
-#main-content::-webkit-scrollbar {
+#contact-main-content::-webkit-scrollbar {
   display: none;
 }
 
@@ -33,7 +33,7 @@
   justify-content: space-between;
 }
 
-#map {
+#map-info .map {
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   min-height: 10rem;
 }
 
-#picture {
+.map .picture {
   height: max(100px, 70%);
   width: max(160px, 100%);
   background: url(/src/assets/images/kanazawa-map.png) no-repeat top center;
@@ -52,7 +52,7 @@
   background-size: contain;
 }
 
-#info {
+#map-info .info {
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -61,71 +61,4 @@
   align-items: center;
   min-height: 10rem;
 }
-
-/* #main-content {
-  display: grid;
-  grid-template-rows: 50% 30px 40% 1fr;
-  justify-content: center;
-  align-items: center;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
-  padding: 5%;
-  padding-top: 2%;
-} */
-
-/* #main-content::-webkit-scrollbar {
-  display: none;
-} */
-
-/* #main-content > * {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size: auto;
-  font-weight: 500;
-} */
-/* 
-#map-info {
-  height: 100%;
-  border: solid red;
-  display: grid;
-  grid-template-rows: 50% 30px 40% 1fr;
-  grid-auto-rows: max-content;
-  justify-content: center;
-  align-items: center;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
-  padding: 5%;
-  padding-top: 2%;
-}
-
-#map-info > * {
-  border: solid green;
-  height: 100%;
-  
-}
-
-#map-info::-webkit-scrollbar {
-  display: none;
-}
-
-#map-pic {
-  height: 100%;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  background: url(/src/assets/images/kanazawa-map.png) no-repeat bottom center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-
-#map-description {
-  min-height: 20rem;
-} */
 
