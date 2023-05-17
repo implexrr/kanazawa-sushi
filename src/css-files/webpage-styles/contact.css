@@ -1,52 +1,64 @@
-@import url(../common/header.css);
-@import url(../common/footer.css);
-@import url(../common/meta.css);
-@import url(../common/margins.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(meta.css);
+@import url(margins.css);
+
+#contact {
+  transition: 0.3s;
+  transform: translate(0, -0.1rem);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
 
 #contactPage-main-content {
   height: 100%;
-  display: grid;
-  grid-template-rows: 50% 5% 40% 5%;
-  justify-content: center;
-  align-items: center;
+  padding: 2%;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  font-size: auto;
+  font-weight: 500;
   box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
-  padding: 5%;
-  padding-top: 2%;
 }
 
 #contactPage-main-content::-webkit-scrollbar {
   display: none;
 }
 
-#contactPage-main-content > * {
+
+#map-info {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
   height: 100%;
-  font-weight: 500;
+  justify-content: space-between;
 }
 
-#contactPage-map-pic {
-  height: 100%;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  background: url(/src/assets/images/kanazawa-map.png) no-repeat bottom center;
+#map-info .map {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+}
+
+.map .picture {
+  height: max(100px, 70%);
+  width: max(160px, 100%);
+  background: url(/src/assets/images/kanazawa-map.png) no-repeat top center;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
 }
 
-#contactPage-map-description {
+#map-info .info {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
   align-items: center;
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  min-height: 10rem;
 }
 
-#contactPage-map-description::-webkit-scrollbar {
-  display: none;
-}

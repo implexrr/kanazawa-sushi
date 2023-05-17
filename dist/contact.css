@@ -10,9 +10,9 @@
   text-underline-offset: 1rem;
 }
 
-#contact-main-content {
+#contactPage-main-content {
   height: 100%;
-  padding: 10%;
+  padding: 2%;
   overflow: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -21,7 +21,7 @@
   box-shadow: inset 0 0 0 1000px rgba(28, 30, 35, 0.8);
 }
 
-#contact-main-content::-webkit-scrollbar {
+#contactPage-main-content::-webkit-scrollbar {
   display: none;
 }
 

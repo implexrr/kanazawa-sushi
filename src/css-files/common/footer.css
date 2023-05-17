@@ -8,6 +8,7 @@
   align-items: center;
   padding-left: max(2%, 20px);
   padding-right: max(2%, 20px);
+  min-height: 2rem;
 }
 
 #copyright {
