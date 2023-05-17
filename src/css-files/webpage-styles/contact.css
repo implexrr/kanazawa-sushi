@@ -1,14 +1,7 @@
-@import url(header.css);
-@import url(footer.css);
-@import url(meta.css);
-@import url(margins.css);
-
-#contact {
-  transition: 0.3s;
-  transform: translate(0, -0.1rem);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-}
+@import url(../common/header.css);
+@import url(../common/footer.css);
+@import url(../common/meta.css);
+@import url(../common/margins.css);
 
 #contactPage-main-content {
   height: 100%;
