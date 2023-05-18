@@ -1,19 +1,10 @@
-import mapPic from "./mapPic";
-import mapAddress from "./mapAddress";
-import mapDescription from "./mapDescription";
-import contactInfo from "./contactInfo";
+import mapInfo from './map-info/mapInfo.js';
 
 // Generate main content section for contact page
 export default function mainContent() {
-  const mainContentDOM = document.createElement('div');
-  mainContentDOM.setAttribute('id', 'contactPage-main-content');
+  const mainContent = document.createElement('div');
+  mainContent.setAttribute('id', 'contactPage-main-content');
+  mainContent.appendChild(mapInfo());
 
-  const mainContent = [mapPic(), mapAddress(), mapDescription(), contactInfo()];
-
-  // Push all main content components onto main content section
-  for (let i = 0; i < mainContent.length; i++) {
-    mainContentDOM.appendChild(mainContent[i]);
-  }
-
-  return mainContentDOM;
+  return mainContent;
 }
