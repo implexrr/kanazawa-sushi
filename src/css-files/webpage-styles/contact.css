@@ -3,6 +3,13 @@
 @import url(../common/meta.css);
 @import url(../common/margins.css);
 
+#contact {
+  transition: 0.3s;
+  transform: translate(0, -0.1rem);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+
 #contactPage-main-content {
   height: 100%;
   padding: 2%;
