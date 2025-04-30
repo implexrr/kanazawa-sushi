@@ -1,6 +1,6 @@
 # Kanazawa
 
-Sign-up is a project from the [Javascript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript) section of [The Odin Project](https://www.theodinproject.com). It is intended to give students an introduction to ES6 modules, SPAs, and working with module bundlers such as webpack. Working demo [here](https://implexrr.github.io/kanazawa-sushi/).
+Kanazawa Sushi is a project from the [Javascript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript) section of [The Odin Project](https://www.theodinproject.com). It is intended to give students an introduction to ES6 modules, SPAs, and working with module bundlers such as webpack. Working demo [here](https://implexrr.github.io/kanazawa-sushi/).
 
 ![](./kanazawa-demo.gif)
 
